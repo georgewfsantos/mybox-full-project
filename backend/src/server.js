@@ -18,8 +18,6 @@ io.on("connection", socket => {
   });
 });
 
-const test = console.log("test");
-
 mongoose.connect(
   "mongodb+srv://omnistack6:omnistack6@cluster0-zfcwj.mongodb.net/omnistack6?retryWrites=true&w=majority",
   {
