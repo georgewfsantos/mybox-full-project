@@ -50,7 +50,7 @@ export default function Box({ match }) {
     <div id="box-container">
       <header>
         <img src={logo} alt="logo" />
-        <h1>RocketSeat</h1>
+        <h1>{boxContent.title}</h1>
       </header>
 
       <Dropzone onDropAccepted={handleUpload}>
