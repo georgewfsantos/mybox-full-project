@@ -16,7 +16,6 @@ import styles from './styles';
 export default function Box({navigation}) {
   const boxId = navigation.getParam('boxId');
 
-  console.log(boxId);
   const [boxInfo, setBoxInfo] = useState({});
 
   async function getBoxInfo() {
