@@ -31,6 +31,8 @@ export default function Box({ match }) {
   function subscribeToNewFiles() {
     const io = socket("https://mybox-omnistack.herokuapp.com");
 
+    io.emit("connectRoom", id);
+
     io.on("file", data => {
       setBoxContent({ data, ...boxContent });
     });
