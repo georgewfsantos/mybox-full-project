@@ -34,7 +34,7 @@ export default function Box({ match }) {
     io.emit("connectRoom", id);
 
     io.on("file", data => {
-      setBoxContent({ data, ...boxContent });
+      setBoxContent(prev => prev && { data, ...prev });
     });
   }
 
